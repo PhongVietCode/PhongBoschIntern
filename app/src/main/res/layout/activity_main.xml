@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myLib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/alike"
+        android:text="My Library"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myIcon" />
+
+    <Button
+        android:id="@+id/seeAll"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="See al books"
+        app:layout_constraintEnd_toEndOf="@+id/myLib"
+        app:layout_constraintStart_toStartOf="@+id/myLib"
+        app:layout_constraintTop_toBottomOf="@+id/myLib" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="about"
+        app:layout_constraintEnd_toEndOf="@+id/favorite"
+        app:layout_constraintStart_toStartOf="@+id/favorite"
+        app:layout_constraintTop_toBottomOf="@+id/favorite" />
+
+    <Button
+        android:id="@+id/favorite"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Favorite"
+        app:layout_constraintEnd_toEndOf="@+id/wishlist"
+        app:layout_constraintStart_toStartOf="@+id/wishlist"
+        app:layout_constraintTop_toBottomOf="@+id/wishlist" />
+
+    <Button
+        android:id="@+id/wishlist"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Wishlist"
+        app:layout_constraintEnd_toEndOf="@+id/already"
+        app:layout_constraintStart_toStartOf="@+id/already"
+        app:layout_constraintTop_toBottomOf="@+id/already" />
+
+    <Button
+        android:id="@+id/already"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Already Read Books"
+        app:layout_constraintEnd_toEndOf="@+id/currently"
+        app:layout_constraintStart_toStartOf="@+id/currently"
+        app:layout_constraintTop_toBottomOf="@+id/currently" />
+
+    <Button
+        android:id="@+id/currently"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Currently Reading Book"
+        app:layout_constraintEnd_toEndOf="@+id/seeAll"
+        app:layout_constraintStart_toStartOf="@+id/seeAll"
+        app:layout_constraintTop_toBottomOf="@+id/seeAll" />
+
+    <ImageView
+        android:id="@+id/myIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_book"/>
+
+    <TextView
+        android:id="@+id/txtDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Developed by PhongVietCode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
